@@ -5,9 +5,11 @@
     repo: govmomi
   targets:
   - !LinuxAmd64
-    artifact_templates: []
+    artifact_templates:
+    - 'govc_Linux_x86_64.tar.gz'
   - !LinuxArm64
-    artifact_templates: []
+    artifact_templates:
+    - 'govc_Linux_arm64.tar.gz'
 - name: fzf
   description: fzf is a general-purpose command-line fuzzy finder.
   source: !Github
@@ -15,9 +17,11 @@
     repo: fzf
   targets:
   - !LinuxAmd64
-    artifact_templates: []
+    artifact_templates:
+    - 'fzf-{version}-linux_amd64.tar.gz'
   - !LinuxArm64
-    artifact_templates: []
+    artifact_templates:
+    - 'fzf-{version}-linux_arm64.tar.gz'
 - name: cilium-cli
   description: cillium commandline utility
   source: !Github
@@ -25,9 +29,11 @@
     repo: cilium-cli
   targets:
   - !LinuxAmd64
-    artifact_templates: []
+    artifact_templates:
+    - 'cilium-linux-amd64.tar.gz'
   - !LinuxArm64
-    artifact_templates: []
+    artifact_templates:
+    - 'cilium-linux-arm64.tar.gz'
 - name: cmctl
   description: cmctl is a command line tool that can help you manage cert-manager and its resources inside your cluster.
   source: !Github
@@ -35,9 +41,11 @@
     repo: cmctl
   targets:
   - !LinuxAmd64
-    artifact_templates: []
+    artifact_templates:
+    - 'cmctl_linux_amd64.tar.gz'
   - !LinuxArm64
-    artifact_templates: []
+    artifact_templates:
+    - 'cmctl_linux_arm.tar.gz'
 - name: eza
   description: eza is a modern alternative for the venerable file-listing command-line program ls.
   ource: !Github
@@ -45,6 +53,8 @@
     repo: eza
   targets:
   - !LinuxAmd64
-    artifact_templates: []
+    artifact_templates:
+    - 'eza_x86_64-unknown-linux-gnu.tar.gz'
   - !LinuxArm64
-    artifact_templates: []
+    artifact_templates:
+    - 'eza_aarch64-unknown-linux-gnu.tar.gz'
